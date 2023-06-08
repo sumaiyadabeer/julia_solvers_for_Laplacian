@@ -1,0 +1,95 @@
+WikiBug exec stat: (see the wikibug analysis file for more info)
+      nvcc  -c src/Lsolve.cu -o obj/Lsolve.o 
+	nvcc  -std=c++11 -prec-div=false  obj/Lsolve.o obj/b_function.o  obj/calculate_error.o obj/communication.o obj/eta_function.o obj/helper.o -o main
+	./main /home/sumaiya/Cuda_solver_optimization1/data/wiki_bug/wikipedia_link_bug_csr data/wiki_bug/b25_Lsolve
+
+b50:
+      
+      Code is executing on device 1 
+      ......input and copy to device done 
+      sink index : 14028 
+      eta_max is gt threshold so breaking
+      Epoch: 3110      eta_max: 0.851125       max_allowed_eta: 0.850000       beta: 1.000000           sink: 151      sum: 3045       frac: 0.049573          duartion: 1.62017 sec
+      eta_max is gt threshold so breaking
+      Epoch: 30        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.500000           sink: 4        sum: 1226       frac: 0.003260          duartion: 0.0152092 sec
+      eta_max is gt threshold so breaking
+      Epoch: 150       eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.250000           sink: 1        sum: 517        frac: 0.001931          duartion: 0.0717451 sec
+      eta_max is gt threshold so breaking
+      Epoch: 75        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.125000           sink: 0        sum: 167        frac: 0.000000          duartion: 0.0347581 sec
+      Epoch: 28464     eta_max: 0.776033       max_allowed_eta: 0.850000       beta: 0.062500           sink: 480      sum: 1804       frac: 0.265928          duartion: 14.331 sec
+
+
+      Code is executing on device 1 
+      ......input and copy to device done 
+      sink index : 14028 
+      eta_max is gt threshold so breaking
+      Epoch: 3210      eta_max: 0.851402       max_allowed_eta: 0.850000       beta: 1.000000           sink: 142      sum: 3168       frac: 0.044809          duartion: 1.65995 sec
+      eta_max is gt threshold so breaking
+      Epoch: 30        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.500000           sink: 3        sum: 1256       frac: 0.002387          duartion: 0.0152709 sec
+      eta_max is gt threshold so breaking
+      Epoch: 150       eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.250000           sink: 2        sum: 505        frac: 0.003953          duartion: 0.0712965 sec
+      eta_max is gt threshold so breaking
+      Epoch: 75        eta_max: 0.920000       max_allowed_eta: 0.850000       beta: 0.125000           sink: 1        sum: 156        frac: 0.006369          duartion: 0.0348865 sec
+      Epoch: 14232     eta_max: 0.557125       max_allowed_eta: 0.850000       beta: 0.062500           sink: 184      sum: 926        frac: 0.198490          duartion: 7.0462
+
+b25:	
+	
+      Code is executing on device 1 
+      ......input and copy to device done 
+      sink index : 1974 
+      eta_max is gt threshold so breaking
+      Epoch: 3530      eta_max: 0.851275       max_allowed_eta: 0.850000     beta: 1.000000           sink: 71       sum: 3581       frac: 0.019821          duartion: 1.80335 sec
+      eta_max is gt threshold so breaking
+      Epoch: 30        eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.500000           sink: 0        sum: 1507       frac: 0.000000          duartion: 0.014983 sec
+      eta_max is gt threshold so breaking
+      Epoch: 150       eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.250000           sink: 1        sum: 638        frac: 0.001565          duartion: 0.0713242 sec
+      eta_max is gt threshold so breaking
+      Epoch: 75        eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.125000           sink: 0        sum: 218        frac: 0.000000          duartion: 0.0346102 sec
+      Epoch: 28464     eta_max: 0.781795       max_allowed_eta: 0.850000     beta: 0.062500           sink: 490      sum: 1836       frac: 0.266739          duartion: 14.2588 sec
+
+      Code is executing on device 1 
+      ......input and copy to device done 
+      sink index : 1974 
+      eta_max is gt threshold so breaking
+      Epoch: 4260      eta_max: 0.850704       max_allowed_eta: 0.850000     beta: 1.000000           sink: 76       sum: 4305       frac: 0.017650          duartion: 2.18562 sec
+      eta_max is gt threshold so breaking
+      Epoch: 30        eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.500000           sink: 0        sum: 1855       frac: 0.000000          duartion: 0.0150844 sec
+      eta_max is gt threshold so breaking
+      Epoch: 150       eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.250000           sink: 3        sum: 822        frac: 0.003645          duartion: 0.0707924 sec
+      eta_max is gt threshold so breaking
+      Epoch: 75        eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.125000           sink: 1        sum: 320        frac: 0.003115          duartion: 0.0349672 sec
+      eta_max is gt threshold so breaking
+      Epoch: 36        eta_max: 1.000000       max_allowed_eta: 0.850000     beta: 0.062500           sink: 0        sum: 95         frac: 0.000000          duartion: 0.0166691 sec
+      Epoch: 14260     eta_max: 0.301823       max_allowed_eta: 0.850000     beta: 0.031250           sink: 96       sum: 476        frac: 0.201258          duartion: 6.6451 sec
+
+
+b12.5:
+      Code is executing on device 1 
+      ......input and copy to device done 
+      sink index : 5123 
+      eta_max is gt threshold so breaking
+      Epoch: 4760      eta_max: 0.850840       max_allowed_eta: 0.850000       beta: 1.000000           sink: 80       sum: 4736       frac: 0.016888          duartion: 2.43059 sec
+      eta_max is gt threshold so breaking
+      Epoch: 30        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.500000           sink: 0        sum: 2077       frac: 0.000000          duartion: 0.0150978 sec
+      eta_max is gt threshold so breaking
+      Epoch: 150       eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.250000           sink: 1        sum: 936        frac: 0.001067          duartion: 0.0705345 sec
+      eta_max is gt threshold so breaking
+      Epoch: 75        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.125000           sink: 0        sum: 371        frac: 0.000000          duartion: 0.0347092 sec
+      eta_max is gt threshold so breaking
+      Epoch: 36        eta_max: 0.916667       max_allowed_eta: 0.850000       beta: 0.062500           sink: 0        sum: 115        frac: 0.000000          duartion: 0.0166064 sec
+      Epoch: 28458     eta_max: 0.470975       max_allowed_eta: 0.850000       beta: 0.031250           sink: 351      sum: 930        frac: 0.377014          duartion: 13.5414 sec
+
+      Code is executing on device 1 
+      ......input and copy to device done 
+      sink index : 5123 
+      eta_max is gt threshold so breaking
+      Epoch: 4820      eta_max: 0.850622       max_allowed_eta: 0.850000       beta: 1.000000           sink: 83       sum: 4812       frac: 0.017245          duartion: 2.47171 sec
+      eta_max is gt threshold so breaking
+      Epoch: 30        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.500000           sink: 0        sum: 2106       frac: 0.000000          duartion: 0.0150291 sec
+      eta_max is gt threshold so breaking
+      Epoch: 150       eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.250000           sink: 3        sum: 944        frac: 0.003175          duartion: 0.0709739 sec
+      eta_max is gt threshold so breaking
+      Epoch: 75        eta_max: 1.000000       max_allowed_eta: 0.850000       beta: 0.125000           sink: 1        sum: 362        frac: 0.002755          duartion: 0.0352281 sec
+      eta_max is gt threshold so breaking
+      Epoch: 36        eta_max: 0.861111       max_allowed_eta: 0.850000       beta: 0.062500           sink: 1        sum: 111        frac: 0.008929          duartion: 0.0163507 sec
+      Epoch: 14260     eta_max: 0.302665       max_allowed_eta: 0.850000       beta: 0.031250           sink: 114      sum: 461        frac: 0.246753          duartion: 6.63094 sec
